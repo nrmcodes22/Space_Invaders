@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Space Invaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>RETRO SPACE INVADERS</h1>
+    <div class="info">
+        <span>Score: <span id="score">0</span></span>
+        <span style="margin-left: 30px;">Lives: <span id="lives">3</span></span>
+        <span style="margin-left: 30px;">Level: <span id="level">1</span></span>
+        <span style="margin-left: 30px;">High Score: <span id="highScore">0</span></span>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <p>ARROW KEYS: Move | SPACEBAR: Shoot</p>
+        <p>P: Pause/Resume | Q: Quit | R: Restart</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
