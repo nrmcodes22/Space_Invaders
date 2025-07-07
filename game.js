@@ -312,6 +312,8 @@ function checkCollisions() {
     enemies.forEach(enemy => {
         if (enemy.alive && enemy.y + enemy.height >= player.y) {
             gameOver = true;
+            sounds.gameOver.currentTime = 0;
+            sounds.gameOver.play().catch(() => {});
         }
     });
 }
